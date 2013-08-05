@@ -1,0 +1,2 @@
+{"ts":1375554659720,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1375554723879,"patch":[[{"diffs":[[1,"<%-@partial('header.html.eco', @)%> \r\n\r\n    <%- @content %>\r\n    \r\n<%-@partial('footer.html.eco', @)%> "]],"start1":0,"start2":0,"length1":0,"length2":103}]],"length":103,"saved":false}

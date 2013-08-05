@@ -1,0 +1,18 @@
+<%-@partial('header.html.eco', @)%> 
+    
+<div id="columns">
+    <div class="columns-inner clearfix">
+        <div id="content-column">
+            <div class="content-inner">
+                <div id="main-content" role="main">                    
+                    <%- @content %>
+                </div>
+            </div>
+        </div>
+        
+        <%-@partial('sidebarLeft.html.eco', @)%> 
+        <%-@partial('sidebarRight.html.eco', @)%>
+    </div>
+</div>    
+   
+<%-@partial('footer.html.eco', @)%> 

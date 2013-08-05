@@ -1,0 +1,6 @@
+{"ts":1375554954993,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1375555018441,"patch":[[{"diffs":[[1,"---\r\nlayout: home\r\ntitle: Marco Deseri\r\nisPage: false\r\n---"]],"start1":0,"start2":0,"length1":0,"length2":58}]],"length":58,"saved":false}
+{"ts":1375555026550,"patch":[[{"diffs":[[0,"le: "],[-1,"Marco Deseri"],[1,"UX Channel"],[0,"\r\nis"]],"start1":22,"start2":22,"length1":20,"length2":18}]],"length":56,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1375607727212,"patch":[[{"diffs":[[0,"ut: "],[-1,"home"],[1,"deafult"],[0,"\r\nti"]],"start1":9,"start2":9,"length1":12,"length2":15}]],"length":59,"saved":false}
+{"ts":1375620500735,"patch":[[{"diffs":[[0,": de"],[-1,"a"],[0,"f"],[1,"a"],[0,"ult\r"]],"start1":11,"start2":11,"length1":10,"length2":10}]],"length":59,"saved":false}
+{"ts":1375621131574,"patch":[[{"diffs":[[0,"ut: "],[-1,"default"],[1,"home"],[0,"\r\nti"]],"start1":9,"start2":9,"length1":15,"length2":12}]],"length":56,"saved":false}

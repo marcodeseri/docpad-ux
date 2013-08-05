@@ -1,0 +1,1 @@
+{"ts":1375359557462,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"# DocPad Configuration File\n# http://docpad.org/docs/config\n\n# Define the DocPad Configuration\ndocpadConfig = {\n\t# ...\n}\n\n# Export the DocPad Configuration\nmodule.exports = docpadConfig"]],"start1":0,"start2":0,"length1":0,"length2":185}]],"length":185}

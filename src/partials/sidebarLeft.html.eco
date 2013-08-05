@@ -1,0 +1,39 @@
+<div class="region region-sidebar-first sidebar">
+    <section id="block-views-issues-menu-block-1" class="block block-views">
+        <div class="block-inner clearfix">
+            <h2 class="block-title">Latest Issue</h2>
+            <div class="block-content content">
+                <div class="view view-issues-menu view-id-issues_menu view-display-id-block_1 ">
+                    <div class="view-content">
+                        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                            <div> <h2><a href="/issues/goodbye-mouse">Goodbye Mouse</a></h2> </div>
+                            <div class="views-field views-field-description"> 
+                            <div class="field-content"><p>Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.</p>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+</section>
+<section id="block-block-1" class="block block-block">
+<div class="block-inner clearfix">
+<h2 class="block-title">Video Streams</h2>
+<div class="block-content content">
+<ul><li><a href="/mobile">Mobile</a></li>
+<li><a href="/data">Data</a></li>
+<li><a href="/usability">Usability</a></li>
+<li><a href="/design">Design</a></li>
+<li><a href="/ui">UI</a></li>
+</ul> </div>
+</div>
+</section>
+<section id="block-service-links-service-links-not-node" class="block block-service-links">
+<div class="block-inner clearfix">
+<h2 class="block-title">Spread the Love</h2>
+<div class="block-content content">
+<div class="service-links"><div class="item-list"><ul><li><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.1374787011.html#_=1375607315445&amp;count=none&amp;counturl=http%3A%2F%2Fwww.uxchannel.com%2Fnode&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fwww.uxchannel.com%2F&amp;size=m&amp;text=UX%20Channel%20%7C%20UX%20Videos%20and%20News&amp;url=http%3A%2F%2Fwww.uxchannel.com%2Fnode&amp;via=ux_channel" class="twitter-share-button service-links-twitter-widget twitter-count-none" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 56px; height: 20px;"></iframe></li><li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A//www.uxchannel.com/node&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100&amp;height=21&amp;font=&amp;locale=" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowtransparency="true"></iframe></li><li><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 38px; height: 24px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 38px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1375607315475" name="I0_1375607315475" src="https://apis.google.com/u/0/_/+1/fastbutton?bsv&amp;count=false&amp;hl=en-US&amp;origin=http%3A%2F%2Fwww.uxchannel.com&amp;url=http%3A%2F%2Fwww.uxchannel.com%2Fnode&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_GB.wWEWVBJQ0rk.O%2Fm%3D__features__%2Fam%3DEQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTOYynxP8bDhfPwcGUggsbbmBpMaMg#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&amp;id=I0_1375607315475&amp;parent=http%3A%2F%2Fwww.uxchannel.com&amp;pfname=&amp;rpctoken=90522868" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div></li></ul></div></div> </div>
+</div>
+</section>
+</div>
