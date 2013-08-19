@@ -1,50 +1,28 @@
 ---
 layout: default
 title: Home
+isPage: true
 isPaged: true
-pagedCollection: posts
+pagedCollection: 'posts'
 pageSize: 10
+type: list
 ---
 
-<% for document,documentIndex  in @getCollection('posts').toJSON(): %>
-    <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix" typeof="sioc:Item foaf:Document" role="article">
-        <header>
-            <h1 property="dc:title" datatype="" class="article-title"><a href="<%= @getCollection('posts').toJSON()[documentIndex].url %>"><%= @getCollection('posts').toJSON()[documentIndex].title %></a></h1>
-        </header>
-        
-        <footer class="submitted">
-            <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('posts').toJSON()[documentIndex].date.toDateString() %></span></p>
-        </footer>
-            
-        <%- @getCollection('posts').toJSON()[documentIndex].content.substr(0, @getCollection('posts').toJSON()[documentIndex].content.indexOf('<!--more')) %>
 
-    </article>   
-<% end %>
-
-<!-- Page Listing -->
-<div class="pagination">
-    <ul>
-        <!-- Previous Page Button -->
-        <% unless @hasPrevPage(): %>
-            <li class="disabled"><span>Prev</span></li>
-        <% else: %>
-            <li><a href="<%= @getPrevPage() %>">Prev</a></li>
-        <% end %>
-
-        <!-- Page Number Buttons -->
-        <% for pageNumber in [0..@document.page.count-1]: %>
-            <% if @document.page.number is pageNumber: %>
-                <li class="active"><span><%= pageNumber + 1 %></span></li>
-            <% else: %>
-                <li><a href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
-            <% end %>
-        <% end %>
-
-        <!-- Next Page Button -->
-        <% unless @hasNextPage(): %>
-            <li class="disabled"><span>Next</span></li>
-        <% else: %>
-            <li><a href="<%= @getNextPage() %>">Next</a></li>
-        <% end %>
-    </ul>
-</div>
+    <%  for document, documentIndex  in  @getCollection('posts').toJSON(): %>
+    
+            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                <header>
+                    <h1 class="article-title"><a href="<%= @getCollection('posts').toJSON()[documentIndex].url %>"><%= @getCollection('posts').toJSON()[documentIndex].title %></a></h1>
+                </header>
+                
+                <footer class="submitted">
+                    <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('posts').toJSON()[documentIndex].date.toDateString() %></span></p>
+                </footer>
+                 
+                <div class="article-content">  
+                    <%- @getCollection('posts').toJSON()[documentIndex].content.substr(0, @getCollection('posts').toJSON()[documentIndex].content.indexOf('<!--more')) %>
+                </div>    
+    
+            </article>    
+    <% end %>

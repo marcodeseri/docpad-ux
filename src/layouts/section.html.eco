@@ -1,5 +1,74 @@
 <%-@partial('header.html.eco', @)%> 
 
-    <%- @content %>
+    <div id="columns">
+        <div class="columns-inner clearfix">
+            <div id="content-column">
+                <div class="content-inner">
+                    <div class="region region-content">
+                        <div id="block-system-main" class="block block-system">
+                            <div id="main-content" role="main">            
+                               <div class="block-inner clearfix">
+                                    
+                                    <%  for document, documentIndex  in  @getCollection('documents').findAll('category': @document.pagedCollection).toJSON(): %>
+                                        <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                                            <header>
+                                                <h1 class="article-title"><a href="<%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].url %>"><%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].title %></a></h1>
+                                            </header>
+                                            
+                                            <footer class="submitted">
+                                                <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].date.toDateString() %></span></p>
+                                            </footer>
+                                                
+                                            <%- @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.substr(0, @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.indexOf('<!--more')) %>
+                                    
+                                        </article>   
+                                    <% end %>
+                                    
+                                    
+                                    <!-- Page Listing -->
+                                    <div class="pagination">
+                                        <ul>
+                                            <!-- Previous Page Button -->
+                                            <% unless @hasPrevPage(): %>
+                                                <li class="disabled"><span>Prev</span></li>
+                                            <% else: %>
+                                                <li><a href="<%= @getPrevPage() %>">Prev</a></li>
+                                            <% end %>
+                                    
+                                            <!-- Page Number Buttons -->
+                                            <% for pageNumber in [0..@document.page.count-1]: %>
+                                                <% if @document.page.number is pageNumber: %>
+                                                    <li class="active"><span><%= pageNumber + 1 %></span></li>
+                                                <% else: %>
+                                                    <li><a href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+                                                <% end %>
+                                            <% end %>
+                                    
+                                            <!-- Next Page Button -->
+                                            <% unless @hasNextPage(): %>
+                                                <li class="disabled"><span>Next</span></li>
+                                            <% else: %>
+                                                <li><a href="<%= @getNextPage() %>">Next</a></li>
+                                            <% end %>
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            
+            
+            
+        
+            <%-@partial('sidebarLeft.html.eco', @)%> 
+            <%-@partial('sidebarRight.html.eco', @)%>
+        </div>
+    </div>    
+    
+    
     
 <%-@partial('footer.html.eco', @)%> 

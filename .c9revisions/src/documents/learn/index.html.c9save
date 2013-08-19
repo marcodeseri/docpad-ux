@@ -1,0 +1,2 @@
+{"ts":1375899416067,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"---\r\nlayout: section\r\ntitle: Learn\r\nisPage: true\r\nisPaged: true\r\npagedCollection: 'learn'\r\npageSize: 10\r\n---\r\n"]],"start1":0,"start2":0,"length1":0,"length2":110}]],"length":110}
+{"contributors":[],"silentsave":false,"ts":1375899471156,"patch":[[{"diffs":[[0,"ze: 10\r\n"],[1,"type: list\r\n"],[0,"---\r\n"]],"start1":97,"start2":97,"length1":13,"length2":25}]],"length":122,"saved":false}

@@ -1,0 +1,10 @@
+{"ts":1375607105454,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1375607190877,"patch":[[{"diffs":[[1,"---\r\nlayout: section\r\ntitle: Learn\r\nisPage: true\r\n---"]],"start1":0,"start2":0,"length1":0,"length2":53}]],"length":53,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1375722321066,"patch":[[{"diffs":[[0,"Page"],[1,"d"],[0,": true\r\n"],[1,"pagedCollection: learn\r\npageSize: 10\r\n"],[0,"---"],[1,"\r\n"]],"start1":38,"start2":38,"length1":15,"length2":56}]],"length":94,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1375771167143,"patch":[[{"diffs":[[0,"e: 10\r\n---\r\n"],[1,"\r\n"]],"start1":82,"start2":82,"length1":12,"length2":14}]],"length":96,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1375876767478,"patch":[[{"diffs":[[0,"le: "],[-1,"Learn"],[1,"Issues"],[0,"\r\nis"]],"start1":25,"start2":25,"length1":13,"length2":14},{"diffs":[[0,"on: "],[-1,"learn"],[1,"'issues'"],[0,"\r\npa"]],"start1":65,"start2":65,"length1":13,"length2":16},{"diffs":[[0,"0\r\n---\r\n"],[-1,"\r\n"]],"start1":90,"start2":90,"length1":10,"length2":8}]],"length":98,"saved":false}
+{"ts":1375876781714,"patch":[[{"diffs":[[0,"Issues\r\n"],[1,"isPage:true\r\n"],[0,"isPaged:"]],"start1":29,"start2":29,"length1":16,"length2":29}]],"length":111,"saved":false}
+{"ts":1375876783329,"patch":[[{"diffs":[[0,"\nisPage:"],[1," "],[0,"true\r\nis"]],"start1":36,"start2":36,"length1":16,"length2":17}]],"length":112,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1375899462815,"patch":[[{"diffs":[[0,"ze: 10\r\n"],[1,"type: list\r\n"],[0,"---\r\n"]],"start1":99,"start2":99,"length1":13,"length2":25}]],"length":124,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1376595314161,"patch":[[{"diffs":[[0,"n: '"],[-1,"issue"],[1,"post"],[0,"s'\r\n"]],"start1":80,"start2":80,"length1":13,"length2":12}]],"length":123,"saved":false}
+{"ts":1376595337909,"patch":[[{"diffs":[[0,"n: '"],[-1,"post"],[1,"issue"],[0,"s'\r\n"]],"start1":80,"start2":80,"length1":12,"length2":13}]],"length":124,"saved":false}

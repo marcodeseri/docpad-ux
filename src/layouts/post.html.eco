@@ -1,0 +1,41 @@
+<%-@partial('header.html.eco', @)%> 
+    
+    <div id="columns">
+        <div class="columns-inner clearfix">
+            
+            <div id="content-column">
+                <div class="content-inner">
+                    <section id="main-content">
+                        <header class="clearfix">
+                            <h1 id="page-title"><%- @document.title %></h1>  
+                        </header>
+                        <div class="region region-content">
+                            <div id="block-system-main" class="block block-system">
+                                <div class="block-inner clearfix">
+                                    <div class="block-content content">
+                                        <article class="article article-video-share article-promoted article-sticky odd article-full clearfix" >
+                                            <footer class="submitted">
+                                                <p class="author-datetime"><span property="dc:date dc:created" content="2013-03-16T09:52:08+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name">marco</span> on <time datetime="2013-03-16T09:52:08Z" pubdate="pubdate">Sat, 03/16/2013 - 09:52</time></span></p>
+                                            </footer>
+                                            <div class="article-content">
+                                                <%- @document.content %>
+                                            </div>
+                                        </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>    
+            
+                </section>
+            
+            <%-@partial('sidebarLeft.html.eco', @)%> 
+            <%-@partial('sidebarRight.html.eco', @)%>
+                    
+        </div>
+    </div>
+    
+   
+<%-@partial('footer.html.eco', @)%> 
