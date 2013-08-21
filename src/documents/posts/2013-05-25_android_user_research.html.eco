@@ -1,0 +1,15 @@
+---
+layout: post
+title: Agile User Research in Android
+category: mobile
+isPage: false
+pagedCollection: [mobile, posts]
+video: '<iframe width="640" height="360" src="//www.youtube.com/embed/6MOeVNbh9cY" frameborder="0" allowfullscreen></iframe>'
+---
+
+
+
+<p>The video walks you through some of the different ux practices used by the Android team, from heuristic evaluation to RITE (Rapid Iterative Testing &amp; Evaluation), cafe studies and pulse studies.<br>
+The RITE approach allows for multiple, rapid iterations even during the same day the test is run, while cafe studies are ideal to gather feedback from fresh eyes and are suitable even inside the same company.<br>
+Pulse studies can follow the same cadence as your sprints - can be 1 week from start to finish - and represent a fast and flexible way of running research in agile environments.</p>
+<!--more--> 

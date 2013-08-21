@@ -19,6 +19,11 @@
                                             </footer>
                                             <div class="article-content">
                                                 <%- @document.content %>
+                                                <div class="embedded-video field-type-video-embed-field">
+                                                    <div class="player">
+                                                       <%- @document.video %>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </article>
                                         </div>

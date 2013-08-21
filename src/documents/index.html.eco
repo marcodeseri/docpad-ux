@@ -23,6 +23,10 @@ type: list
                 <div class="article-content">  
                     <%- @getCollection('posts').toJSON()[documentIndex].content.substr(0, @getCollection('posts').toJSON()[documentIndex].content.indexOf('<!--more')) %>
                 </div>    
-    
+                <div class="embedded-video field-type-video-embed-field">
+                    <div class="player">
+                       <%-@getCollection('posts').toJSON()[documentIndex].video %>
+                    </div>
+                </div>
             </article>    
     <% end %>

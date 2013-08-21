@@ -20,7 +20,12 @@
                                             </footer>
                                                 
                                             <%- @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.substr(0, @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.indexOf('<!--more')) %>
-                                    
+                                            
+                                            <div class="embedded-video field-type-video-embed-field">
+                                                <div class="player">
+                                                   <%-@getCollection('posts').toJSON()[documentIndex].video %>
+                                                </div>
+                                            </div>    
                                         </article>   
                                     <% end %>
                                     
