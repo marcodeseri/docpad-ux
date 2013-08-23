@@ -1,0 +1,15 @@
+---
+layout: post
+title: Firefox Junior iPad Browser
+category: ui
+isPage: false
+pagedCollection: [ui, posts]
+video: '<iframe width="640px" height="360px" src="//www.youtube.com/embed/q5HPjhZeLYE?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>'
+---
+
+
+
+<p>Mozilla tries to re-imagine browsing on the iPad with Junior, a prototype with a couple of interesting concepts. First of all, the interface gets rid of tabs: removing the chrome makes the browsing experience more immersive. Second, they introduce a couple of layered controls, for the back button and for other functions (like tab management).<br>
+The video is a little long and is not a polished product presentation, but is worth watching.<br>
+Mozilla's approach is obviously not the only attempt at building more immersive browsing experiences: <a href="http://itunes.apple.com/us/app/dolphin-browser-for-ipad/id460812023?mt=8">Dolphin HD</a> - among others - implements full screen browsing in a nice way, with gestures and spatial controls (swipe left and right to reveal interface elements).</p>
+<!--more--> 
