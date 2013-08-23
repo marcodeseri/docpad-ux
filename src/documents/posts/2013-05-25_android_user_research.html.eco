@@ -2,6 +2,7 @@
 layout: post
 title: Agile User Research in Android
 category: mobile
+tags: mobile
 isPage: false
 pagedCollection: [mobile, posts]
 video: '<iframe width="640" height="360" src="//www.youtube.com/embed/6MOeVNbh9cY" frameborder="0" allowfullscreen></iframe>'

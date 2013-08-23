@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Connecting
-category: design
+tags: design
 isPage: false
-pagedCollection: [design, posts]
+pagedCollection: [posts]
 video: '<iframe width="640" height="360" src="http://player.vimeo.com/video/52861634?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>'
 ---
 

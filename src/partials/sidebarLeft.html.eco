@@ -21,11 +21,12 @@
 <div class="block-inner clearfix">
 <h2 class="block-title">Video Streams</h2>
 <div class="block-content content">
-<ul><li><a href="/mobile">Mobile</a></li>
-<li><a href="/data">Data</a></li>
-<li><a href="/usability">Usability</a></li>
-<li><a href="/design">Design</a></li>
-<li><a href="/ui">UI</a></li>
+<ul>
+
+    <% for key, item of @getTagCloud(): %>
+        <li><a href="<%= item.url %>"><%= item.tag %> (<%= item.count %>)</a></li>
+    <% end %>
+ 
 </ul> </div>
 </div>
 </section>

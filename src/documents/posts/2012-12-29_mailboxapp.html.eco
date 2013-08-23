@@ -1,9 +1,9 @@
 ---
 layout: post
 title: A Whole New Mailbox
-category: ui
+tags: ui
 isPage: false
-pagedCollection: [ui, posts]
+pagedCollection: [posts]
 video: '<iframe width="640" height="360" src="http://player.vimeo.com/video/54553882?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>'
 ---
 
