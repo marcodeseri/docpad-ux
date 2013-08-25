@@ -1,7 +1,7 @@
 #skip-link{display:none;}
 @media only screen and (max-width:320px) {iframe{margin-left:-10px;margin-right:0;border:0;}}
 @media only screen and (max-width:480px) {#page{box-shadow:0 0 0 rgba(0,0,0,0)!important;}
-h1#page-title{width:100%;font-size:1.9em;}#header{max-height:1000px;padding:0;background-image:none;}
+h1#page-title, h1#section-title{width:100%;font-size:1.9em;}#header{max-height:1000px;padding:0;background-image:none;}
 #branding,.region-header{float:none;max-height:1000px;width:100%;clear:both;}
 #branding{background-position:0 5px;height:60px;}
 .region-header{margin:10px 0;}
@@ -18,11 +18,10 @@ h1#page-title{width:100%;font-size:1.9em;}#header{max-height:1000px;padding:0;ba
 .block{min-height:1em;}#block-block-2{width:100%;float:none;}#block-block-3{display:none}}
 
 @media only screen and (min-width:481px) and (max-width:768px) {#page{box-shadow:0 0 0 rgba(0,0,0,0)!important;}
-h1#page-title{width:100%;font-size:1.9em;}#site-name{font-size:3.7em;padding:25px 0 0 5px;}#site-slogan{font-size:1.3em;line-height:1.3em;padding:0 0 0 5px;}
+h1#page-title, h1#section-title{width:100%;font-size:1.9em;}#site-name{font-size:3.7em;padding:25px 0 0 5px;}#site-slogan{font-size:1.3em;line-height:1.3em;padding:0 0 0 5px;}
 #header{max-height:1000px;padding:0;background-image:none;}#branding,.region-header{float:none;max-height:1000px;width:100%;clear:both;}
 #header .header-inner{padding-bottom:5px;}#menu-bar .menu-wrapper{margin:0 auto;}#menu-bar ul,#menu-bar ul li{float:none;}
 #menu-bar .menu-wrapper ul{width:96%;margin:0 auto;}#menu-bar .menu-wrapper ul li{float:left;}.region-sidebar-first .block,.region-sidebar-second .block{width:100%;}.block{min-height:1em;}.region-sidebar-second .block{width:100%;}h1#page-title{background:none;color:#000}#main-content header.clearfix{height:35px;}}@media only screen and (min-width:769px) and (max-width:1024px) {h1#page-title{background:none;color:#000;}#block-views-issues-menu-block-1{min-height:360px;}#menu-bar .menu-wrapper ul{width:30%;}#main-content header.clearfix{height:35px;}#menu-bar ul li{padding:0 22px 0 0;}.region-sidebar-second{margin-top:0}}
 
 @media only screen and (min-width:1025px) {body.front .article-sticky h1{background:url(/images/ui/flag_s.png) no-repeat top left;background-position:0 -20px;color:#fff;font-weight:lighter;font-size:2.1em;width:48%;height:60px;position:absolute;left:-16px;padding:0 0 0 25px;}#block-views-issues-menu-block-1{min-height:360px;}body.front .article-sticky h1{width:96%;}body.front .article-sticky header{height:48px}
 body.front .article-sticky h1 a:link,body.front .article-sticky h1 a:visited,body.front .article-sticky h1 a:hover,body.front .article-sticky h1 a:active{color:#fff}}
-
