@@ -48,7 +48,7 @@
   })();
 </script>
 </head>
-<body class="<%= if @document.type is 'list' then 'front' else '' %> two-sidebars">
+<body class="<%= if @document.type is 'list' then 'front' else '' %> two-sidebars bf-sss">
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
 
 

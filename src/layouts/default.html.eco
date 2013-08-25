@@ -20,10 +20,10 @@
             </div>    
             
             <%-@partial('sidebarLeft.html.eco', @)%> 
-            <%-@partial('sidebarRight.html.eco', @)%>
+            <%-@partial('sidebarRight.html', @)%>
                     
         </div>
     </div>
     
    
-<%-@partial('footer.html.eco', @)%> 
+<%-@partial('footer.html', @)%> 

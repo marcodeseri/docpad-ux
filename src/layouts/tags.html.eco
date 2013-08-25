@@ -1,13 +1,45 @@
 ---
 layout: default
 ---
-<h1>Pages tagged with '<%= @document.tag %>'</h1>
 
-<ul>
-<% for doc in @getCollection('documents').findAll({tags: '$in': @document.tag}).toJSON(): %>
-    <li>
-        <a href="<%= doc.url %>"><%= doc.title %></a>
-    	<div class="post-date"><%= @document.date.toLocaleDateString() %></div>
-    </li>
-<% end %>
-</ul>
+<section id="main-content" role="main">
+    <header class="clearfix">
+        <h1 id="page-title"><%= @document.tag %></h1>  
+    </header>
+
+    <div class="region region-content">
+        <div id="block-system-main" class="block block-system">
+            <div class="block-inner clearfix">
+                <div class="block-content content">
+                    <div class="view view-issues view-id-issues view-display-id-page view-dom-id-4f7ea76e64bbda5ef5badbef088bb86a">
+                        <div class="view-content">
+                        
+                           <% for doc in @getCollection('documents').findAll({tags: '$in': @document.tag}).toJSON(): %>
+                                <div class="views-row">
+                                    <h2><a href="<%= doc.url %>"><%= doc.title %></a></h2>
+                                    <div class="views-field views-field-description"> 
+                                        <div class="field-content">
+                                            <%- doc.content %>
+                                            
+                                            <div class="embedded-video field-type-video-embed-field">
+                                                <div class="player">
+                                                   <%- doc.video %>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>    
+                                </div>
+                            <% end %>
+                            
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+
+
