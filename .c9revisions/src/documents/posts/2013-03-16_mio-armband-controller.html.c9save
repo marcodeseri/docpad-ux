@@ -5,3 +5,4 @@
 {"ts":1377102778042,"patch":[[{"diffs":[[0,"bed/"],[-1,"AoPbuzopngc"],[1,"oWu9TFJjHaM"],[0,"?wid"]],"start1":174,"start2":174,"length1":19,"length2":19}]],"length":1872,"saved":false}
 {"contributors":[],"silentsave":false,"ts":1377259668450,"patch":[[{"diffs":[[0,"and\n"],[-1,"category"],[1,"tags"],[0,": ui\n"],[1,"\n"],[0,"isPa"]],"start1":44,"start2":44,"length1":21,"length2":18}]],"length":1869,"saved":false}
 {"ts":1377259674578,"patch":[[{"diffs":[[0,"ags: ui\n"],[-1,"\n"],[0,"isPage: "]],"start1":49,"start2":49,"length1":17,"length2":16},{"diffs":[[0,"n: ["],[-1,"ui, "],[0,"post"]],"start1":85,"start2":85,"length1":12,"length2":8}]],"length":1864,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1377453052591,"patch":[[{"diffs":[[0,"[posts]\n"],[1,"issue: 'goodbye-mouse'\n"],[0,"video: '"]],"start1":88,"start2":88,"length1":16,"length2":39}]],"length":1887,"saved":false}

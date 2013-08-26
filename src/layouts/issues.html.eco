@@ -9,15 +9,12 @@
                             <div id="main-content" role="main">            
                                <div class="block-inner clearfix">
                                     
-                                    <% if @document.pagedCollection is 'posts': %>
-                                        <!-- nothing to do -->
-                                    <% else: %>
-                                        <header class="clearfix">
-                                            <h1 id="section-title"><%= @document.pagedCollection %></h1>                                                      
-                                        </header>
-                                    <% end %>
+                                    <header class="clearfix">
+                                        <h1 id="section-title">Issues</h1>                                                      
+                                    </header>
+
                                     
-                                    <%  for document, documentIndex  in  @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
+                                    <%  for document, documentIndex  in  @getCollection('documents').findAll('category': @document.pagedCollection).toJSON(): %>
                                         <article class="article article-video-share article-promoted article-teaser odd clearfix <% if @document.pagedCollection is 'posts': %>article-sticky <% end %>">
                                             <header>
                                                 <h1 class="article-title"><a href="<%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].url %>"><%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].title %></a></h1>
@@ -27,13 +24,9 @@
                                                 <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].date.toDateString() %></span></p>
                                             </footer>
                                                 
-                                            <%- @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.substr(0, @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content.indexOf('<!--more')) %>
+                                            <%- @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].content#abstract %>
                                             
-                                            <div class="embedded-video field-type-video-embed-field">
-                                                <div class="player">
-                                                   <%- @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[documentIndex].video %>
-                                                </div>
-                                            </div>    
+                                               
                                         </article>   
                                     <% end %>
                                     
