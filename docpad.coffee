@@ -37,6 +37,16 @@ docpadConfig = {
             _.map scripts, (value) ->
                 return value.replace 'out', ''
                 
+        getCuttedContent: (content) ->            
+            i = content.search('<!--more-->')
+            if i >= 0
+                content[0..i-1]                
+            else
+                content
+
+        hasReadMore: (content) ->
+            content.search('<!--more-->') >= 0
+                
     collections:
         posts: ->
             @getCollection("html").findAllLive({relativeOutDirPath: 'posts', isPagedAuto: $ne: true},[{date:-1}])

@@ -1,0 +1,26 @@
+<div class="item-list">
+    <ul class="pager">
+        <!-- Previous Page Button -->
+        <% unless @hasPrevPage(): %>
+            
+        <% else: %>
+            <li><a class="pager-previous" href="<%= @getPrevPage() %>">Prev</a></li>
+        <% end %>
+
+        <!-- Page Number Buttons -->
+        <% for pageNumber in [0..@document.page.count-1]: %>
+            <% if @document.page.number is pageNumber: %>
+                <li class="pager-current"><span><%= pageNumber + 1 %></span></li>
+            <% else: %>
+                <li><a class="pager-item" href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+            <% end %>
+        <% end %>
+
+        <!-- Next Page Button -->
+        <% unless @hasNextPage(): %>
+            
+        <% else: %>
+            <li><a class="pager-next" href="<%= @getNextPage() %>">Next</a></li>
+        <% end %>
+    </ul>
+</div>
