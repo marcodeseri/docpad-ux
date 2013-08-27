@@ -1,34 +1,58 @@
 ---
-layout: default
+layout: 'default'
 title: Home
 isPaged: true
 pagedCollection: 'posts'
-pageSize: 5
-type: list
+pageSize: 10
 ---
 
 
-    <%  for document, documentIndex  in  @getCollection('posts').toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
+    <%  for document in  @getCollection('posts').toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
     
             <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
                 <header>
-                    <h1 class="article-title"><a href="<%= @getCollection('posts').toJSON()[documentIndex].url %>"><%= @getCollection('posts').toJSON()[documentIndex].title %></a></h1>
+                    <h1 class="article-title"><a href="<%=document.url %>"><%= document.title %></a></h1>
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('posts').toJSON()[documentIndex].date.toDateString() %></span></p>
+                    <p class="author-datetime"><span>Submitted by marco on <%= document.date.toDateString() %></span></p>
                 </footer>
                  
                 <div class="article-content">  
-                    <%- @getCuttedContent(String(@getCollection('posts').toJSON()[documentIndex].contentRenderedWithoutLayouts)) %>
+                    <%- @getCuttedContent(String(document.contentRenderedWithoutLayouts)) %>
                 </div>    
                 <div class="embedded-video field-type-video-embed-field">
                     <div class="player">
-                       <%-@getCollection('posts').toJSON()[documentIndex].video %>
+                       <%-document.video %>
                     </div>
                 </div>
             </article>    
     <% end %>
 
 
-   <%-@partial('pagination.html.eco', @)%> 
+   <div class="item-list">
+    <ul class="pager">
+        <!-- Previous Page Button -->
+        <% unless @hasPrevPage(): %>
+            
+        <% else: %>
+            <li><a class="pager-previous" href="<%= @getPrevPage() %>">Prev</a></li>
+        <% end %>
+
+        <!-- Page Number Buttons -->
+        <% for pageNumber in [0..@document.page.count-1]: %>
+            <% if @document.page.number is pageNumber: %>
+                <li class="pager-current"><span><%= pageNumber + 1 %></span></li>
+            <% else: %>
+                <li><a class="pager-item" href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+            <% end %>
+        <% end %>
+
+        <!-- Next Page Button -->
+        <% unless @hasNextPage(): %>
+            
+        <% else: %>
+            <li><a class="pager-next" href="<%= @getNextPage() %>">Next</a></li>
+        <% end %>
+    </ul>
+</div>
