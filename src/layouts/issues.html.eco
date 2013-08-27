@@ -24,7 +24,7 @@
                                                 <p class="author-datetime"><span>Submitted by marco on <%= document.date.toDateString() %></span></p>
                                             </footer>
                                                 
-                                            <%- document.content %>
+                                            <%- document.abstract %>
                                             
                                                
                                         </article>   

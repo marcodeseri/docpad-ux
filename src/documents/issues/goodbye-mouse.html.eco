@@ -4,29 +4,24 @@ title: Goodbye Mouse
 category: 'issues'
 pageSize: 10
 type: list
+abstract: 'Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.'
 ---
 
-<header class="clearfix">
-    <h1 id="section-title">Goodbye Mouse</h1>                                                      
-</header>
-<p id="abstract">Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.</p>
-<!--more-->
-
- <%  for document, documentIndex  in  @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON(): %>
+ <%  for document, documentIndex  in  @getCollection('issues').toJSON(): %>
         <article class="article article-video-share article-promoted article-teaser odd clearfix <% if @document.pagedCollection is 'posts': %>article-sticky <% end %>">
             <header>
-                <h1 class="article-title"><a href="<%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].url %>"><%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].title %></a></h1>
+                <h1 class="article-title"><a href="<%= document.url %>"><%= document.title %></a></h1>
             </header>
             
             <footer class="submitted">
-                <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].date.toDateString() %></span></p>
+                <p class="author-datetime"><span>Submitted by marco on <%= document.date.toDateString() %></span></p>
             </footer>
                 
-            <%- @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].content.substr(0, @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].content.indexOf('<!--more')) %>
+            <%- @getCuttedContent(String(document.contentRenderedWithoutLayouts))  %>
             
             <div class="embedded-video field-type-video-embed-field">
                 <div class="player">
-                   <%- @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].video %>
+                   <%- document.video %>
                 </div>
             </div>    
         </article>   

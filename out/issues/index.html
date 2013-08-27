@@ -48,7 +48,7 @@
   })();
 </script>
 </head>
-<body class="front two-sidebars bf-sss">
+<body class=" two-sidebars bf-sss">
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
 
 
@@ -118,34 +118,10 @@
                                             </header>
                                             
                                             <footer class="submitted">
-                                                <p class="author-datetime"><span>Submitted by marco on Mon Aug 26 2013</span></p>
+                                                <p class="author-datetime"><span>Submitted by marco on Tue Aug 27 2013</span></p>
                                             </footer>
                                                 
-                                            <header class="clearfix">
-    <h1 id="section-title">Goodbye Mouse</h1>                                                      
-</header>
-<p id="abstract">Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.</p>
-<!--more-->
-
- <%  for document, documentIndex  in  @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON(): %>
-        <article class="article article-video-share article-promoted article-teaser odd clearfix <% if @document.pagedCollection is 'posts': %>article-sticky <% end %>">
-            <header>
-                <h1 class="article-title"><a href="<%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].url %>"><%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].title %></a></h1>
-            </header>
-            
-            <footer class="submitted">
-                <p class="author-datetime"><span>Submitted by marco on <%= @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].date.toDateString() %></span></p>
-            </footer>
-                
-            <%- @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].content.substr(0, @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].content.indexOf('<!--more')) %>
-            
-            <div class="embedded-video field-type-video-embed-field">
-                <div class="player">
-                   <%- @getCollection('documents').findAll('issue': 'goodbye-mouse').toJSON()[documentIndex].video %>
-                </div>
-            </div>    
-        </article>   
-    <% end %>
+                                            Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.
                                             
                                                
                                         </article>   
@@ -193,17 +169,25 @@
                 <div class="view view-issues-menu view-id-issues_menu view-display-id-block_1 ">
                     <div class="view-content">
                         <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
-                            <div> <h2><a href="/issues/goodbye-mouse">Goodbye Mouse</a></h2> </div>
-                            <div class="views-field views-field-description"> 
-                            <div class="field-content"><p>Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.</p>
+                        
+                            
+                                <div>
+                                    <h2><a href="/issues/goodbye-mouse">Goodbye Mouse</a></h2>
+                                </div>
+                                <div class="views-field views-field-description"> 
+                                    <div class="field-content">
+                                        Touchscreens made us quickly forget the old plastic keyboards that plagued our phones until a few years ago. How long until we say goodbye to our mice? Innovation is back in the input controller industry.
+                                    </div>
+                                </div>
+                            
+ 
                         </div> 
                     </div> 
                 </div>
             </div>
         </div> 
-    </div>
-</div>
-</section>
+    </section>
+
       <section id="block-block-1" class="block block-block">
         <div class="block-inner clearfix">
             <h2 class="block-title">Video Streams</h2>
