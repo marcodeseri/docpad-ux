@@ -4,6 +4,7 @@ title: Home
 isPaged: true
 pagedCollection: 'posts'
 pageSize: 10
+type: list
 ---
 
 
