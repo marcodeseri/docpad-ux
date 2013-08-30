@@ -75,7 +75,10 @@
                                             <%= page.title %>
                                         </a>
                                     </li>
-                                <% end %>                                
+                                <% end %>
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                        <a href="/tools">Tools</a>
+                                    </li>
                             </ul>
                         </div>
                     </nav>
