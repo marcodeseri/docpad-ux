@@ -52,10 +52,12 @@
     var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
+
+<%- @getBlock('scripts').toHTML() %>
+
 </head>
 <body class="<%= if @document.type is 'list' then 'front' else '' %> two-sidebars bf-sss">
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
-
 
     <div id="page" class="container">
         <header id="header" class="clearfix" role="banner">

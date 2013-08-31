@@ -9,6 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta property="fb:admins" content="690861484"/>
 <meta charset="utf-8"/>
+<meta name="author" content="marco deseri">
 <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
 
 <link rel="alternate" type="application/rss+xml" title="UX Channel RSS" href="http://www.uxchannel.com/rss.xml"/>
@@ -51,10 +52,57 @@
     var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
+
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
+
 </head>
 <body class="front two-sidebars bf-sss">
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
-
 
     <div id="page" class="container">
         <header id="header" class="clearfix" role="banner">
@@ -112,11 +160,76 @@
     
             <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
                 <header>
+                    <h1 class="article-title"><a href="/posts/inside-eye-perfect-storm">Clear, gesture controlled lists</a></h1>
+                </header>
+                
+                <footer class="submitted">
+                    <p class="author-datetime"><span>Submitted by marco on Sun Jan 15 2012</span></p>
+                </footer>
+                 
+                <div class="article-content">  
+                    <p>Jared Spool talks about mobile interfaces at Mobilism 11, Amsterdam.</p>
+
+                </div>    
+                <div class="embedded-video field-type-video-embed-field">
+                    <div class="player">
+                       <iframe width="640" height="360" src="http://player.vimeo.com/video/25547105?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>    
+    
+    
+            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                <header>
+                    <h1 class="article-title"><a href="/posts/faster-sites-business-kpi">Faster Mobile Sites and Business KPI</a></h1>
+                </header>
+                
+                <footer class="submitted">
+                    <p class="author-datetime"><span>Submitted by marco on Mon Jan 09 2012</span></p>
+                </footer>
+                 
+                <div class="article-content">  
+                    <p>An interesting talk from Joshua Bixby, <a href="http://www.strangeloopnetworks.com">Strangeloop President</a>, on Mobile Performance and its relationship with business KPIs. Bixby's speech is both interesting for its contents and the clear and engaging information visualization. <br><br>
+After providing context about how the mobile landscape changed in the last 3 years, Bixby details the outcomes of a Strangeloop experiment that measured how bounce rate and conversion values change at different network speeds and delays.</p>
+
+                </div>    
+                <div class="embedded-video field-type-video-embed-field">
+                    <div class="player">
+                       <iframe width="640px" height="360px" src="//www.youtube.com/embed/6fKHA50307I?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </article>    
+    
+    
+            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                <header>
+                    <h1 class="article-title"><a href="/posts/buttons-are-hack">Buttons are a hack</a></h1>
+                </header>
+                
+                <footer class="submitted">
+                    <p class="author-datetime"><span>Submitted by marco on Mon Jan 09 2012</span></p>
+                </footer>
+                 
+                <div class="article-content">  
+                    <p><a href="http://globalmoxie.com">Josh Clark</a> - in an already classic speech from <a href="http://www.webstock.org.nz/">webstock</a> 11 - makes it clear how buttons work as a middle man between the user and the content.<br> While buttons used to be a good metaphor with desktop PCs, touch based interfaces changed everything. Touch interfaces establish a new level of intimacy with the content, and designers should leverage this factor when building interfaces. At this new level of intimacy, visual feedback - like fast animations - can help build intimacy and explain the metaphor the designer chose. <br><br>
+On touch interfaces, where Fitts law doesn't apply anymore, gestures - especially multi-touch on bigger screens - configure themselves as the new keyboard shortcuts.</p>
+
+                </div>    
+                <div class="embedded-video field-type-video-embed-field">
+                    <div class="player">
+                       <iframe width="640" height="360" src="http://player.vimeo.com/video/21796111?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>    
+    
+    
+            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                <header>
                     <h1 class="article-title"><a href="/posts/design-with-opinion">Design With an Opinion</a></h1>
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Sat Dec 24 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Sun Dec 25 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -137,7 +250,7 @@
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Fri Dec 16 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Sat Dec 17 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -162,7 +275,7 @@
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Sat Dec 10 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Sun Dec 11 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -184,7 +297,7 @@ They talk about design at Microsoft: Windows Phone, the new Office, Metro and th
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Sat Nov 12 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Sun Nov 13 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -205,7 +318,7 @@ They talk about design at Microsoft: Windows Phone, the new Office, Metro and th
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Wed Nov 02 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Thu Nov 03 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -226,7 +339,7 @@ They talk about design at Microsoft: Windows Phone, the new Office, Metro and th
                 </header>
                 
                 <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Wed Nov 02 2011</span></p>
+                    <p class="author-datetime"><span>Submitted by marco on Thu Nov 03 2011</span></p>
                 </footer>
                  
                 <div class="article-content">  
@@ -312,13 +425,13 @@ They talk about design at Microsoft: Windows Phone, the new Office, Metro and th
                 <ul>
                 
                     
-                        <li><a href="/tags/mobile">mobile (7)</a></li>
+                        <li><a href="/tags/mobile">mobile (8)</a></li>
                     
-                        <li><a href="/tags/content">content (1)</a></li>
+                        <li><a href="/tags/content">content (2)</a></li>
                     
                         <li><a href="/tags/design">design (9)</a></li>
                     
-                        <li><a href="/tags/ui">ui (11)</a></li>
+                        <li><a href="/tags/ui">ui (12)</a></li>
                     
                  
                 </ul> 
