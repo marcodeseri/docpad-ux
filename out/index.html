@@ -53,52 +53,7 @@
   })();
 </script>
 
-<script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
 
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script>
 
 </head>
 <body class="front two-sidebars bf-sss">
@@ -311,28 +266,6 @@ The down side is that they are much harder to use in every day life than they lo
     
             <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
                 <header>
-                    <h1 class="article-title"><a href="/posts/frog-android-feel_ux">Frog Reimagines Android UI with Feel_UX</a></h1>
-                </header>
-                
-                <footer class="submitted">
-                    <p class="author-datetime"><span>Submitted by marco on Wed Jun 20 2012</span></p>
-                </footer>
-                 
-                <div class="article-content">  
-                    <p>Frog Design collaborates with Sharp to deliver an innovative Android skin based on Ice Cream Sandwich, called feel_UX. The design extensively focused on the lock screen, that becomes more personal and interactive. Another big change is on the home screen, divided in 3 columns - apps, widgets and shortcuts - making it easier for novice users to find their way around the OS.<br>
-This series of Aquos smartphones will be available in Japan this Summer.</p>
-
-                </div>    
-                <div class="embedded-video field-type-video-embed-field">
-                    <div class="player">
-                       <iframe width="640" height="360" src="http://player.vimeo.com/video/43224490?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </article>    
-    
-    
-            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
-                <header>
                     <h1 class="article-title"><a href="/posts/firefox-junior-ipad">Firefox Junior iPad Browser</a></h1>
                 </header>
                 
@@ -349,6 +282,28 @@ Mozilla's approach is obviously not the only attempt at building more immersive 
                 <div class="embedded-video field-type-video-embed-field">
                     <div class="player">
                        <iframe width="640px" height="360px" src="//www.youtube.com/embed/q5HPjhZeLYE?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </article>    
+    
+    
+            <article class="article article-video-share article-promoted article-sticky article-teaser odd clearfix">
+                <header>
+                    <h1 class="article-title"><a href="/posts/frog-android-feel_ux">Frog Reimagines Android UI with Feel_UX</a></h1>
+                </header>
+                
+                <footer class="submitted">
+                    <p class="author-datetime"><span>Submitted by marco on Wed Jun 20 2012</span></p>
+                </footer>
+                 
+                <div class="article-content">  
+                    <p>Frog Design collaborates with Sharp to deliver an innovative Android skin based on Ice Cream Sandwich, called feel_UX. The design extensively focused on the lock screen, that becomes more personal and interactive. Another big change is on the home screen, divided in 3 columns - apps, widgets and shortcuts - making it easier for novice users to find their way around the OS.<br>
+This series of Aquos smartphones will be available in Japan this Summer.</p>
+
+                </div>    
+                <div class="embedded-video field-type-video-embed-field">
+                    <div class="player">
+                       <iframe width="640" height="360" src="http://player.vimeo.com/video/43224490?title=0&amp;byline=0&amp;portrait=0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>    
@@ -455,7 +410,7 @@ Mozilla's approach is obviously not the only attempt at building more immersive 
                     
                         <li><a href="/tags/design">design (9)</a></li>
                     
-                        <li><a href="/tags/ui">ui (12)</a></li>
+                        <li><a href="/tags/ui">ui (11)</a></li>
                     
                  
                 </ul> 
