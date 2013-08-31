@@ -32,7 +32,7 @@
                 <ul>
                 
                     <% for key, item of @getTagCloud(): %>
-                        <li><a href="<%= item.url %>"><%= item.tag %> (<%= item.count %>)</a></li>
+                        <li><a href="/tags/<%= item.tag %>"><%= item.tag %> (<%= item.count %>)</a></li>
                     <% end %>
                  
                 </ul> 

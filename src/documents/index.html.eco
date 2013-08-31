@@ -1,6 +1,7 @@
 ---
 layout: 'default'
 title: Home
+description: UX Channel is your source for user experience videos, news and updates.
 isPaged: true
 pagedCollection: 'posts'
 pageSize: 10

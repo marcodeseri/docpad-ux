@@ -13,7 +13,10 @@
 
 <link rel="alternate" type="application/rss+xml" title="UX Channel RSS" href="http://www.uxchannel.com/rss.xml"/>
 <title><%= @getPreparedTitle() %></title>
+<meta name="description" content="<%= @getPreparedDescription() %>">
 
+<link type="text/css" rel="stylesheet" href="/css/all.min.css" media="all"/>
+<!-- original list of css files
 <link type="text/css" rel="stylesheet" href="/css/at-messages.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/layout.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/ux_channel.css" media="all"/>
@@ -21,6 +24,9 @@
 <link type="text/css" rel="stylesheet" href="/css/responsive-style.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/responsive-gpanels.css" media="all"/>
 <link type="text/css" rel="stylesheet" href="/css/responsive-layout.css" media="all"/>
+-->
+
+
 <!--[if lt IE 9]>
 <link type="text/css" rel="stylesheet" href="/css/lt-ie9.css" media="all" />
 <![endif]-->

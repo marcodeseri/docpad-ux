@@ -17,3 +17,4 @@
 {"ts":1377626246543,"patch":[[{"diffs":[[0,"\n</div>\n"],[1,"    <div>"],[0,"\n      <"]],"start1":1300,"start2":1300,"length1":16,"length2":25}]],"length":1847,"saved":false}
 {"ts":1377626254546,"patch":[[{"diffs":[[0,"\n</div>\n"],[-1,"    "],[0,"<div>\n  "]],"start1":1300,"start2":1300,"length1":20,"length2":16}]],"length":1843,"saved":false}
 {"ts":1377626289704,"patch":[[{"diffs":[[0,"on>\n"],[-1,"</div>\n<div>"],[0,"\n   "]],"start1":1297,"start2":1297,"length1":20,"length2":8}]],"length":1831,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1377935002117,"patch":[[{"diffs":[[0,"li><a href=\""],[1,"/tags/"],[0,"<%= item.url"]],"start1":1631,"start2":1631,"length1":24,"length2":30},{"diffs":[[0,"%= item."],[-1,"url"],[1,"tag"],[0," %>\"><%="]],"start1":1650,"start2":1650,"length1":19,"length2":19}]],"length":1837,"saved":false}
