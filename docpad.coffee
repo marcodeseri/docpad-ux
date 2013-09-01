@@ -52,7 +52,7 @@ docpadConfig = {
             database.findAllLive({relativeOutDirPath:/posts/, isPagedAuto: $ne: true},[filename:-1])
         
         learn:(database) -> 
-            database.findAllLive({relativeOutDirPath:/learn/, isPagedAuto: $ne: true},[filename:1])
+            database.findAllLive({relativeOutDirPath:/learn/, isPagedAuto: $ne: true},[filename:-1])
              
         issues: ->
              @getCollection("html").findAllLive({relativeOutDirPath: 'issues', isPagedAuto: $ne: true},[filename:-1]) 
