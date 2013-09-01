@@ -49,16 +49,16 @@ docpadConfig = {
                 
     collections:
         posts: (database) -> 
-            database.findAllLive({relativeOutDirPath:/posts/, isPagedAuto: $ne: true},[date:-1])
+            database.findAllLive({relativeOutDirPath:/posts/, isPagedAuto: $ne: true},[filename:-1])
         
-        learn: ->
-             @getCollection("html").findAllLive({relativeOutDirPath: 'learn', isPagedAuto: $ne: true},[{date:-1}])
+        learn:(database) -> 
+            database.findAllLive({relativeOutDirPath:/learn/, isPagedAuto: $ne: true},[filename:1])
              
         issues: ->
-             @getCollection("html").findAllLive({relativeOutDirPath: 'issues', isPagedAuto: $ne: true},[{date:-1}]) 
+             @getCollection("html").findAllLive({relativeOutDirPath: 'issues', isPagedAuto: $ne: true},[filename:-1]) 
              
         tools: ->
-             @getCollection("html").findAllLive({relativeOutDirPath: 'tools', isPagedAuto: $ne: true},[{date:-1}]) 
+             @getCollection("html").findAllLive({relativeOutDirPath: 'tools', isPagedAuto: $ne: true},[filename:-1]) 
 
             
     plugins:

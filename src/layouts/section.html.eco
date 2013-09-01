@@ -17,7 +17,7 @@
                                         </header>
                                     <% end %>
                                     
-                                    <%  for document  in  @getCollection('documents').findAll('category': @document.pagedCollection).toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
+                                    <%  for document  in  @getCollection('documents').findAll({'category': @document.pagedCollection},[filename:-1]).toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
                                         <article class="article article-video-share article-promoted article-teaser odd clearfix <% if @document.pagedCollection is 'posts': %>article-sticky <% end %>">
                                             <header>
                                                 <h1 class="article-title"><a href="<%= document.url %>"><%= document.title %></a></h1>

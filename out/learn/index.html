@@ -53,7 +53,52 @@
   })();
 </script>
 
+<script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
 
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script>
 
 </head>
 <body class="front two-sidebars bf-sss">
@@ -119,22 +164,19 @@
                                     
                                         <article class="article article-video-share article-promoted article-teaser odd clearfix ">
                                             <header>
-                                                <h1 class="article-title"><a href="/learn/developing-ipad-apps">Developing iPad Applications</a></h1>
+                                                <h1 class="article-title"><a href="/learn/rethinking-digital-analysis">Rethinking Digital Analysis</a></h1>
                                             </header>
                                             
                                             <footer class="submitted">
-                                                <p class="author-datetime"><span>Submitted by marco on Sat May 19 2012</span></p>
+                                                <p class="author-datetime"><span>Submitted by marco on Sun Sep 01 2013</span></p>
                                             </footer>
                                                 
-                                            <p>The Carnegie Mellon University shares its lectures about iPad development. The full course, slides and videos, is available on iTunes:</p>
-<ul><li> <a href="http://itunes.apple.com/it/app/itunes-u/id490217893?mt=8">Get the iTunes U App</a></li>
-<li> <a href="http://itunes.apple.com/us/course/id499050344">Developing iPad Applications on iTunes U</a></li>
-</ul>
+                                            <p>Justin Cutroni explains how the multi device world changed forever the landscape of digital analysis and how the new Universal Analytics measurement protocol can help.</p>
 
                                             
                                             <div class="embedded-video field-type-video-embed-field">
                                                 <div class="player">
-                                                   <iframe width="640px" height="360px" src="//www.youtube.com/embed/879bPLZhVME?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                                                   <iframe width="640px" height="360px" src="//www.youtube.com/embed/B4Ori9l_Sgo?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
                                                 </div>
                                             </div>    
                                         </article>   
@@ -160,7 +202,7 @@
                                     
                                         <article class="article article-video-share article-promoted article-teaser odd clearfix ">
                                             <header>
-                                                <h1 class="article-title"><a href="/posts/developing-ipad-apps">Developing iPad Applications</a></h1>
+                                                <h1 class="article-title"><a href="/learn/developing-ipad-apps">Developing iPad Applications</a></h1>
                                             </header>
                                             
                                             <footer class="submitted">
@@ -250,7 +292,7 @@
                     
                         <li><a href="/tags/mobile">mobile (8)</a></li>
                     
-                        <li><a href="/tags/content">content (2)</a></li>
+                        <li><a href="/tags/content">content (1)</a></li>
                     
                         <li><a href="/tags/design">design (9)</a></li>
                     
