@@ -13,7 +13,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon"/>
 
 <link rel="alternate" type="application/rss+xml" title="UX Channel RSS" href="http://www.uxchannel.com/rss.xml"/>
-<title>Design for Growth | UX Videos and Updates</title>
+<title>Nymi: heartbeat authentication | UX Videos and Updates</title>
 <meta name="description" content="efewfewfwefwe.">
 
 <link type="text/css" rel="stylesheet" href="/css/all.min.css" media="all"/>
@@ -47,68 +47,8 @@
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 
-<script >(function(){
-	/* Did we just livereload? */
-var log = !!(localStorage && console && console.log && true);
-if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
-	localStorage.removeItem('/docpad-livereload/reloaded');
-	console.log('LiveReload completed at', new Date())
-}
 
-/* Listen for the regenerated event and perform a reload of the page when the event occurs */
-var listen = function(){
-	var primus = new Primus('/docpad-livereload');
-	primus.on('data', function(data){
-		if ( data && data.message ) {
-			if ( data.message === 'generateBefore' ) {
-				if ( log ) {
-					console.log('LiveReload started at', new Date());
-				}
-				if ( typeof document.getElementsByTagName !== 'undefined' ) {
-	document.getElementsByTagName('html')[0].className += ' wait';
-}
-			}
-			else if ( data.message === 'generateAfter' ) {
-				if ( log ) {
-					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
-				}
-				document.location.reload();
-			}
-		}
-	});
-};
-	/* Inject socket into our page */
-var inject = function(){
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = 'async';
-	t.src = '/primus/primus.js';
-	t.onload = listen;
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t, s);
-};
-	if ( typeof Primus !== 'undefined' ) {
-		listen();
-	} else {
-		inject();
-	}
-})();</script>
 
-<!-- Snowplow starts plowing -->
-<script type="text/javascript">
-var _snaq = _snaq || [];
-
-_snaq.push(['setCollectorCf', 'd9zz029ysb6ou']);
-_snaq.push(['trackPageView']);
-
-(function() {
-var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
-sp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://d1fc8wv8zag5ca.cloudfront.net/0.12.0/sp.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
-})();
-
-</script>
-<!-- Snowplow stops plowing -->
 </head>
 <body class=" two-sidebars bf-sss">
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
@@ -162,7 +102,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp
                 <div class="content-inner">
                     <section id="main-content">
                         <header class="clearfix">
-                            <h1 id="page-title">Design for Growth</h1>  
+                            <h1 id="page-title">Nymi: heartbeat authentication</h1>  
                         </header>
                         <div class="region region-content">
                             <div id="block-system-main" class="block block-system">
@@ -173,11 +113,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp
                                                 <p class="author-datetime"><span property="dc:date dc:created" content="2013-03-16T09:52:08+01:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name">marco</span> on <time datetime="2013-03-16T09:52:08Z" pubdate="pubdate">Sat, 03/16/2013 - 09:52</time></span></p>
                                             </footer>
                                             <div class="article-content">
-                                                <p>What role does design play in growing a business? How is it connected with innovation? This video from the British Design Council highlights the important role design plays in good business. Among the interviewees, you will find an unusual Jony Ive - Apple's SVP of Industrial Design - explaining that it is easy to design something different, but innovation requires a fundamentally different approach.</p>
-<!--more-->
+                                                <p>Everyone is talking about wearable devices, but in most cases it's hard to find a real value in those products. Nymi could change that. It's a simple idea that solves one of the fundamental problems about the internet: password based authentication. Let your heart do the work for you.</p>
+<!--more--> 
+<p>While I think it's difficult for nymi to succeed on a broad market, I expect big players like Apple and Google to go in this direction. Providing biometric authentication at the OS level is key to truly eradicate passwords.</p>
+<p>This is exactly what should be at the core of an iWatch: a system that knows exactly who you are and securely shares that information with your smartphone.</p>
                                                 <div class="embedded-video field-type-video-embed-field">
                                                     <div class="player">
-                                                       <iframe width="640px" height="360px" src="//www.youtube.com/embed/AoPbuzopngc?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
+                                                       <iframe width="640px" height="360px" src="//www.youtube.com/embed/jUO7Qnmc8vE?width=640px&amp;height=360px&amp;autoplay=0&amp;hd=1&amp;rel=0&amp;autohide=2&amp;showinfo=1&amp;modestbranding=0&amp;theme=dark&amp;iv_load_policy=1&amp;start=0&amp;wmode=opaque" frameborder="0" allowfullscreen=""></iframe>
                                                     </div>
                                                 </div>
                                             </div>
