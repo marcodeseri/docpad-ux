@@ -32,26 +32,29 @@
 <link type="text/css" rel="stylesheet" href="/css/lt-ie9.css" media="all" />
 <![endif]-->
 
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+
+
+
+<script type="text/javascript">
+    var digitalData = [];
+    digitalData.push({'page.pageType': 'home'});
+</script>
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-56N3"
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TQKZ8B"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-56N3');</script>
+})(window,document,'script','digitalData','GTM-TQKZ8B');</script>
 <!-- End Google Tag Manager -->
-
-
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-
-<%- @getBlock('scripts').toHTML() %>
-
-
 </head>
 <body class="<%= if @document.type is 'list' then 'front' else '' %> two-sidebars bf-sss">
+
+    
+
     <div id="skip-link"><a href="#main-content" class="element-invisible element-focusable">Skip to main content</a></div>
 
     <div id="page" class="container">
